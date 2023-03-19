@@ -1,8 +1,12 @@
 import React from 'react'
+import CommanSection from '../shared/CommanSection'
+import '../styles/timetable.css'
 
 const Timetable = () => {
   return (
-    <div>Timetable</div>
+    <>
+    <CommanSection title={"All Bus TimeTable"}/>
+    </>
   )
 }
 
