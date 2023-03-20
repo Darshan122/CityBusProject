@@ -15,7 +15,7 @@ import BusImage from  '../components/Image-gallery/BusImages'
 import Teams from '../components/Teams/Teams';
 import NewLetter from '../shared/Newsletter';
 
-import OurbusCard from '../shared/OurbusCard';
+// import OurbusCard from '../shared/OurbusCard';
 
 
 const Homes = () => {
