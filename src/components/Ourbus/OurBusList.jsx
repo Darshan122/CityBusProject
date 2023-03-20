@@ -7,7 +7,7 @@ const OurBusList = () => {
   return (
     <>
     {
-    busData?.map(tour => (
+    busData?.map((tour) => (
       <Col lg='3' className='mb-4' key={tour.id}>
         <OurbusCard bus={tour}/>
 

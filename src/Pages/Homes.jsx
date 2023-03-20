@@ -15,6 +15,8 @@ import BusImage from  '../components/Image-gallery/BusImages'
 import Teams from '../components/Teams/Teams';
 import NewLetter from '../shared/Newsletter';
 
+import OurbusCard from '../shared/OurbusCard';
+
 
 const Homes = () => {
   return (
@@ -81,6 +83,7 @@ const Homes = () => {
               <h2 className='featured__tour-title'>Our Bus</h2>
             </Col>
             <OurBusList />
+       
           </Row>
         </Container>
       </section>
