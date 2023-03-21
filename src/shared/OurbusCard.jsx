@@ -1,22 +1,23 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import { Card, CardBody } from 'reactstrap';
+import './ourbus-card.css'
 
 const OurbusCard = (tours) => {
   const { id, title, photo, city, price, avgRating, reviews } = tours.bus;
   return (
     <div className='tour__card'>
-    <Card className='card' style={{border:'non', boxShadow:' rgba(0, 0, 0, 0.2) 0px 18px 50px -10px'}}>
-      <div className='tour__img' style={{ position: 'relative'}}>
-        <img src={photo} alt="tour-img" className='m-auto' style={{width:"305px", borderRadius:"5px 5px 5px 5px"}} />
-        <span className='span' style={{ position: 'absolute', bottom: 0, right: 900, width: 'max-content', height: 'max-content', zIndex:10,  background: 'var(--primary-color),  color: #fff', borderRadius: "3px 0 0 0"}}>Featured</span>
+    <Card className='card' >
+      <div className='tour__img' >
+        <img src={photo} alt="tour-img"  />
+        <span className='span' >Featured</span>
       </div>
 
     <CardBody>
       <div className="card__top d-flex ailgin-items-center 
     justify-content-between" >
         <span className='tour__location d-flex align-items-center gap-1'>
-          <i class="ri-map-pin-line" style={{color:'var(--secondary-color)'}}></i> {city}
+          <i class="ri-map-pin-line" ></i> {city}
         </span>
         <span className='tour__rating d-flex align-items-center gap-1' style={{fontSize:'0.9rem', color:'var(--text-color)'}}>
           <i class="ri-star-fill"></i> {avgRating}{" "}
