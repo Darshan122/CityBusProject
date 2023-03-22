@@ -1,9 +1,31 @@
 import React from 'react'
+import '../styles/busDetails.css'
+import { Container,Row, Col} from 'reactstrap'
+import { useParams } from 'react-router-dom'
+import tourData from '../assets/data/tours'
 
-const Bustimetable = () => {
+const BusDetails = () => {
+
+  const {id} = useParams()
+  
+  const tours = tourData.find(tours=> tours.id ===id)         
+
+  const {photo} = tours.bus;// try
   return (
-    <div>Bustimetable</div>
+    <>
+    <section>
+      <Container>
+        <Row>
+          <Col lg='8'>
+            <div className="tour__content">
+              <img src={photo} alt = " "/>
+            </div>
+          </Col>
+        </Row>
+      </Container>
+    </section>
+    </>
   )
 }
 
-export default Bustimetable
+export default BusDetails

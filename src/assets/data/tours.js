@@ -1,18 +1,18 @@
-import tourImg01 from "../images/tour-img01.jpg";
-import tourImg02 from "../images/tour-img02.jpg";
-import tourImg03 from "../images/tour-img03.jpg";
-import tourImg04 from "../images/tour-img04.jpg";
-import tourImg05 from "../images/tour-img05.jpg";
-import tourImg06 from "../images/tour-img06.jpg";
-import tourImg07 from "../images/tour-img07.jpg";
+import tourImg01 from "../images/bus1.jpg";
+import tourImg02 from "../images/bus1.jpg";
+import tourImg03 from "../images/bus1.jpg";
+import tourImg04 from "../images/bus1.jpg";
+import tourImg05 from "../images/bus1.jpg";
+import tourImg06 from "../images/bus1.jpg";
+import tourImg07 from "../images/bus1.jpg";
 
 const tours = [
   {
     id: "01",
-    title: "Westminister Bridge",
-    city: "London",
+    title: "Bus No: 1",
+    city: "Tramba to TrikonBag",
     distance: 300,
-    price: 99,
+    price: 20,
     maxGroupSize: 10,
     desc: "this is the description",
     reviews: [
@@ -27,10 +27,10 @@ const tours = [
   },
   {
     id: "02",
-    title: "Bali, Indonesia",
-    city: "Indonesia",
+    title: "Bus No: 2",
+    city: "Tramba to Tramba",
     distance: 400,
-    price: 99,
+    price: 30,
     maxGroupSize: 8,
     desc: "this is the description",
     reviews: [
@@ -45,10 +45,10 @@ const tours = [
   },
   {
     id: "03",
-    title: "Snowy Mountains, Thailand",
-    city: "Thailand",
+    title: "Bus No: 3",
+    city: "Trikonbag to University",
     distance: 500,
-    price: 99,
+    price: 20,
     maxGroupSize: 8,
     desc: "this is the description",
     reviews: [
@@ -63,8 +63,8 @@ const tours = [
   },
   {
     id: "04",
-    title: "Beautiful Sunrise, Thailand",
-    city: "Thailand",
+    title: "Bus No: 4",
+    city: "Aaji dem to Busport",
     distance: 500,
     price: 99,
     maxGroupSize: 8,
@@ -81,10 +81,10 @@ const tours = [
   },
   {
     id: "05",
-    title: "Nusa Pendia Bali, Indonesia",
-    city: "Indonesia",
+    title: "Bus No: 5",
+    city: "R.K to Raya Gam",
     distance: 500,
-    price: 99,
+    price: 50,
     maxGroupSize: 8,
     desc: "this is the description",
     reviews: [
@@ -99,8 +99,8 @@ const tours = [
   },
   {
     id: "06",
-    title: "Cherry Blossoms Spring",
-    city: "Japan",
+    title: "Bus No: 6",
+    city: "Tramba to Tramba",
     distance: 500,
     price: 99,
     maxGroupSize: 8,
@@ -117,10 +117,10 @@ const tours = [
   },
   {
     id: "07",
-    title: "Holmen Lofoten",
-    city: "France",
+    title: "Bus No: 7",
+    city: "Tramba to Raya Gam",
     distance: 500,
-    price: 99,
+    price: 25,
     maxGroupSize: 8,
     desc: "this is the description",
     reviews: [
@@ -135,10 +135,10 @@ const tours = [
   },
   {
     id: "08",
-    title: "Snowy Mountains, Thailand",
-    city: "Thailand",
+    title: "Bus No: 8",
+    city: "R.K to R.K",
     distance: 500,
-    price: 99,
+    price: 15,
     maxGroupSize: 8,
     desc: "this is the description",
     reviews: [
