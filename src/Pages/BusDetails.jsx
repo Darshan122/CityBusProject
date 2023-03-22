@@ -10,7 +10,7 @@ const BusDetails = () => {
   
   const tours = tourData.find(tours=> tours.id ===id)         
 
-  const {photo} = tours.bus;
+  const {photo} = tours.bus;// try
   return (
     <>
     <section>
