@@ -38,7 +38,7 @@ const OurbusCard = (tours) => {
     justify-content-between mt-3"
           >
             <h5>
-              ${price}
+              ₹{price}
               <span> /per person </span>
             </h5>
 
