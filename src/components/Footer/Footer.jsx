@@ -45,7 +45,7 @@ const Footer = () => {
                     <Col lg='3'>
                         <div className='logo'>
                             <img src={logo} alt='' />
-                            <p>wertyuiopasdfghjkl;zxcvbnm,liuyd<br />fcghbjntcrxvgbhjtrcvbhjntrdcvbnmkkjgf</p>
+                            <p>City Bus Welcome You All😊<br />Have a great day🤩</p>
 
                             <div className="social__link d-flex align-items-center gap-4">
                                 <span>

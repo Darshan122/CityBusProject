@@ -12,6 +12,7 @@ import Login from './../Pages/Login';
 import Register from './../Pages/Register';
 import SearchResult from './../Pages/SearchResult';
 import Timetable from './../Pages/Timetable';
+import ThankYou from '../Pages/ThankYou';
 
 const Routers = () => {
   return (
@@ -22,6 +23,7 @@ const Routers = () => {
       <Route path='/timetable/:id' element={<Bustimetable/>}/>
       <Route path='/login' element={<Login/>}/>
       <Route path='/register' element={<Register/>}/>
+      <Route path='/thank-you' element={<ThankYou/>}/>
       <Route path='/timetable/search' element={<SearchResult/>}/>
       
     </Routes>

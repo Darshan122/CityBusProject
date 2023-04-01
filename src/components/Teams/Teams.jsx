@@ -1,8 +1,8 @@
 import React from 'react'
 import Slider from 'react-slick'
-import ava01 from '../../assets/images/ava-1.jpg'
-import ava02 from '../../assets/images/ava-2.jpg'
-import ava03 from '../../assets/images/ava-3.jpg'
+import ava01 from '../../assets/images/darshan.jpg'
+import ava02 from '../../assets/images/prakash.jpg'
+import ava03 from '../../assets/images/santosh.jpg'
 
 const Teams = () => {
   
@@ -45,7 +45,8 @@ const Teams = () => {
                 <img src={ava01} className = 'w-25 h-25 rounded-2' alt='' />
                 <div>
                     <h6 className='mb-0 mt-3'> Darshan Zalavadiya</h6>
-                    <p>Darshan</p>
+                    <p>Team Leader<br/>Front Hand & Back Hand</p>
+                    {/* <p>Front Hand & Back Hand</p> */}
                 </div>
             </div>
         </div>
@@ -55,8 +56,8 @@ const Teams = () => {
             <div className='d-flex align-items-center gap-4 mt-3'>
                 <img src={ava02} className = 'w-25 h-25 rounded-2' alt='' />
                 <div>
-                    <h6 className='mb-0 mt-3'> Darshan Zalavadiya</h6>
-                    <p>Darshan</p>
+                    <h6 className='mb-0 mt-3'> Praksh Dhankecha</h6>
+                    <p>Team Member<br/>Front Hand & Back Hand</p>
                 </div>
             </div>
         </div>
@@ -65,8 +66,8 @@ const Teams = () => {
             <div className='d-flex align-items-center gap-4 mt-3'>
                 <img src={ava03} className = 'w-25 h-25 rounded-2' alt='' />
                 <div>
-                    <h6 className='mb-0 mt-3'> Darshan Zalavadiya</h6>
-                    <p>Darshan</p>
+                    <h6 className='mb-0 mt-3'> Santosh Masand</h6>
+                    <p>Team Member<br/>Front Hand & Back Hand</p>
                 </div>
             </div>
         </div>

@@ -12,7 +12,8 @@ const tours = [
     title: "Bus No: 1",
     city: "Tramba to TrikonBag",
     distance: 300,
-    price: 20,
+    price: "₹20",
+    address:"sshxhhcxxxcgsgc",
     maxGroupSize: 10,
     desc: "this is the description",
     reviews: [

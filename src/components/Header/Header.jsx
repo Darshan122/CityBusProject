@@ -71,10 +71,10 @@ const Header = () => {
 
           <div className='nav_right d-flex align-items-center gap-4'>
             <div className='nav_btns d-flex align-items-center gap-4'>
-              <Button className='btn secondary_btn'>
+              <Button className='btn secondary__btn'>
                 <Link to='/login'>Login</Link>
               </Button>
-              <Button variant="primary" className='btn'>
+              <Button variant="primary" className='btn primary__btn'>
                 <Link to='/register'>Register</Link>
               </Button>
             </div>
