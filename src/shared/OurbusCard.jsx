@@ -4,7 +4,7 @@ import { Card, CardBody } from "reactstrap";
 import "./ourbus-card.css";
 
 const OurbusCard = (tours) => {
-  const { id, title, photo, city, price, avgRating, reviews } = tours.bus;
+  const { _id, title, photo, city, price, avgRating, reviews } = tours.bus;
   return (
     <div className="tour__card">
       <Card className="card">
@@ -31,7 +31,7 @@ const OurbusCard = (tours) => {
           </div>
 
           <h5 className=" tour__title">
-            <Link to={`/timetable/${id}`}>{title}</Link>
+            <Link to={`/timetable/${_id}`}>{title}</Link>
           </h5>
           <div
             className="card__bottom d-flex align-items-center 
@@ -43,7 +43,7 @@ const OurbusCard = (tours) => {
             </h5>
 
             <button className="btn booking__btn">
-              <Link to={`/timetable/${id}`}>Book Now</Link>
+              <Link to={`/timetable/${_id}`}>Book Now</Link>
             </button>
           </div>
         </CardBody>
