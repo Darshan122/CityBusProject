@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import "../styles/busDetails.css";
 import { Container, Row, Col } from "reactstrap";
 import { useParams } from "react-router-dom";
@@ -6,9 +6,11 @@ import Booking from "../components/Booking/Booking";
 import Newsletter from "../shared/Newsletter";
 import useFetch from "../hooks/useFetch";
 import { BASE_URL } from "../utils/config";
+import { AuthContext } from "../context/AuthContext";
 
 const BusDetails = () => {
   const { id } = useParams();
+  const { user } = useContext(AuthContext);
 
   // fetch data from database
   const { data: tour, loading, error } = useFetch(`${BASE_URL}/bus/${id}`);
