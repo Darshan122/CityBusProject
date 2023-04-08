@@ -28,6 +28,7 @@ const nav_links = [
 
 const Header = () => {
   const headerRef = useRef(null);
+  const menuRef = useRef(null);
   const navigate = useNavigate();
   const { user, dispatch } = useContext(AuthContext);
 
@@ -42,9 +43,9 @@ const Header = () => {
         document.body.scrollTop > 80 ||
         document.documentElement.scrollTop > 80
       ) {
-        headerRef.current.classList.add("sticky_header");
+        headerRef.current.classList.add("sticky__header");
       } else {
-        headerRef.current.classList.remove("sticky_header");
+        headerRef.current.classList.remove("sticky__header");
       }
     });
   };
@@ -53,6 +54,9 @@ const Header = () => {
     stickyHeaderFun();
     return window.removeEventListener("scroll", stickyHeaderFun);
   });
+
+  const toggleMenu = () => menuRef.current.classList.toggle("show__menu");
+
   return (
     <header className="header" ref={headerRef}>
       <Container>
@@ -61,7 +65,7 @@ const Header = () => {
             <div className="logo">
               <img src={logo} alt="" />
             </div>
-            <div className="navigation">
+            <div className="navigation" ref={menuRef} onClick={toggleMenu}>
               <ul className="menu d-flex align-items-center gap-5">
                 {nav_links.map((item, index) => (
                   <li className="nav_item" key={index}>
@@ -98,7 +102,7 @@ const Header = () => {
                   </>
                 )}
               </div>
-              <span className="mobile_menu">
+              <span className="mobile_menu" onClick={toggleMenu}>
                 <i class="ri-menu-line"></i>
               </span>
             </div>
