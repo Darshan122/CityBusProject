@@ -14,10 +14,15 @@ import OurBusList from "../components/Ourbus/OurBusList";
 import BusImage from "../components/Image-gallery/BusImages";
 import Teams from "../components/Teams/Teams";
 import NewLetter from "../shared/Newsletter";
+import OurbusCard from "../shared/OurbusCard";
 
+import useFetch from "../hooks/useFetch";
+import { BASE_URL } from "../utils/config";
 // import OurbusCard from '../shared/OurbusCard';
 
 const Homes = () => {
+  const { data: bus, loading, error } = useFetch(`${BASE_URL}/bus`);
+
   return (
     <>
       <section>
@@ -86,7 +91,16 @@ const Homes = () => {
               <Subtitle subtitle={"Explore"} />
               <h2 className="featured__tour-title">Our Bus</h2>
             </Col>
-            <OurBusList />
+            {bus?.map((tour) => (
+              <Col
+                lg="2"
+                className="mb-4"
+                key={tour._id}
+                style={{ width: 300 }}
+              >
+                <OurbusCard bus={tour} />
+              </Col>
+            ))}
           </Row>
         </Container>
       </section>
